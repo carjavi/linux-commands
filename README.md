@@ -11,13 +11,17 @@
 ```ls -la``` ver los permisos <br>
 ```df-h``` ver espacio de disco <br>
 ```du -hs``` ver espacio de folder<br>
-```rm -r -f``` Borra directorio sin importar si esta vacio o no<br>
-```~```  es el equivalente al home (alt Gr + *+~)<br>
+```rm -r -f``` Borra directorio sin importar si esta vacio o no `rm -rf (directorio)`<br>
+``` ~``` el simbolo (home) se hace con `Alg Gr + *`<br>
+```&&``` Unir 2 comandos de consola<br>
 ```pwd``` directorio actual<br>
 
+> :memo: **Note:** Abrir un archivo directamente desde el terminal de VScode. abrira una ventana nueva
+```
+code (filename.ext)
+```
 
 > :memo: **Note:** El ```&``` al final de un comando lo hace correr en segundo plano,(casi oculto), este no bloquea el sistema operativo si falla
-> 
 > :memo: **Note:** ```-y``` al final de un comando le dara YES a todas las preguntas impliucadas al comando
 
 # On terminal
