@@ -22,6 +22,7 @@ code (filename.ext)
 ```
 
 > :memo: **Note:** El ```&``` al final de un comando lo hace correr en segundo plano,(casi oculto), este no bloquea el sistema operativo si falla
+> 
 > :memo: **Note:** ```-y``` al final de un comando le dara YES a todas las preguntas impliucadas al comando
 
 # On terminal
