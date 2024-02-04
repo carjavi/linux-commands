@@ -26,7 +26,7 @@ code (filename.ext)
 > :memo: **Note:** ```-y``` al final de un comando le dara YES a todas las preguntas impliucadas al comando
 
 # On terminal
-<p>Press <kbd>Ctrl</kbd> + <kbd>l</kbd>borrar terminal </p> 
+<p>Press <kbd>Ctrl</kbd> + <kbd>l</kbd> borrar terminal </p> 
 <p>Press <kbd>Ctrl</kbd> + <kbd>shift</kbd> + <kbd>v</kbd> pega en el terminal desde el portapapeles </p> 
 
 
