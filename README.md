@@ -65,6 +65,32 @@ sudo systemctl restart ssh
 
 <br>
 
+## Troubleshooting SSH UBUNTU 20.4
+
+### SSH Permission Denied (publickey) 
+probar si esta corriendo el servivio de SSH
+```
+sudo systemctl status sshd
+```
+
+ver la llave publica
+```
+cat ~/.ssh/id_rsa.pub
+```
+
+### Password Authentication
+If public key authentication is not working, you can temporarily enable password authentication to troubleshoot further. Open the SSH configuration file on the remote server:
+```
+sudo nano /etc/ssh/sshd_config
+```
+Change ```PasswordAuthentication``` from no to ```Yes```. Save the file and restart the SSH service
+
+```
+sudo systemctl restart ssh
+```
+
+<br>
+
 
 ## How to Set Up SSH Key on Windows 10 
 (with PowerShell / GitBash Terminal)
@@ -94,33 +120,6 @@ cat ~/.ssh/id_rsa.pub | ssh username@remote_host "mkdir -p ~/.ssh && touch ~/.ss
 
 
 Creating and Using SSH Keys with GUI: https://www.purdue.edu/science/scienceit/ssh-keys-windows.html
-
-<br>
-
-## Troubleshooting SSH UBUNTU 20.4
-
-### SSH Permission Denied (publickey) 
-probar si esta corriendo el servivio de SSH
-```
-sudo systemctl status sshd
-```
-
-ver la llave publica
-```
-cat ~/.ssh/id_rsa.pub
-```
-
-### Password Authentication
-If public key authentication is not working, you can temporarily enable password authentication to troubleshoot further. Open the SSH configuration file on the remote server:
-```
-sudo nano /etc/ssh/sshd_config
-```
-Change ```PasswordAuthentication``` from no to ```Yes```. Save the file and restart the SSH service
-
-```
-sudo systemctl restart ssh
-```
-
 
 <br>
 
