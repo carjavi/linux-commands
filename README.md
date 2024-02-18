@@ -32,6 +32,10 @@ code (filename.ext)
 
 <br>
 
+<p align="center"><img src="./img/linux cmd.jpg" width="800" alt=" " /></p>
+
+<br>
+
 ---
 Copyright &copy; 2022 [carjavi](https://github.com/carjavi). <br>
 ```www.instintodigital.net``` <br>
