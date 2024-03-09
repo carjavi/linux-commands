@@ -24,6 +24,15 @@
 - [On terminal](#on-terminal)
   - [Busqueda con filtro](#busqueda-con-filtro)
 - [Use of wget](#use-of-wget)
+- [Cómo gestionar procesos](#cómo-gestionar-procesos)
+  - [Mostrar todos los procesos](#mostrar-todos-los-procesos)
+  - [Cerrar un proceso](#cerrar-un-proceso)
+  - [Forzar cierre de proceso por PID](#forzar-cierre-de-proceso-por-pid)
+  - [Gestionar procesos en el fondo](#gestionar-procesos-en-el-fondo)
+  - [Iniciar proceso en background](#iniciar-proceso-en-background)
+  - [Poner procesos en background](#poner-procesos-en-background)
+  - [Mostrar procesos en background](#mostrar-procesos-en-background)
+  - [Traer al frente proceso](#traer-al-frente-proceso)
   - [How to use wget to download files and interact with rest APIs](#how-to-use-wget-to-download-files-and-interact-with-rest-apis)
   - [Sending GET requests](#sending-get-requests)
 - [Modificación de permisos de ficheros en Linux](#modificación-de-permisos-de-ficheros-en-linux)
@@ -165,13 +174,55 @@ echo "zzz" <ruta del archivo> = echo "zzz" | sudo tee -a <ruta del archivo><br>
 cat <path file>| grep <word key>
 ```
 <br>
+
 # Use of wget
 **How to Check if wgHet is Installed?** <br>
 Most likely, the wget package is already on your system as it now comes pre-installed on most Linux distributions.
-To check, open the terminal window and type in: <br>
-``` wget``` 
+To check, open the terminal window and type in: ``` wget``` 
 
-install: ```sudo apt-get install wget``` 
+install: 
+```
+sudo apt-get install wget
+``` 
+<br>
+
+# Cómo gestionar procesos
+
+``` ps```  Muestra los procesos que se encuentran activos en el sistema actualmente.
+
+``` ps -ef```  #mostrar todos los procesos
+
+## Mostrar todos los procesos
+``` top```  Muestra todos los procesos en funcionamiento <br>
+``` htop```  Muestra todos los procesos en funcionamiento (version mejorado)
+sudo apt-get install htop
+
+## Cerrar un proceso
+```kill PID```
+
+## Forzar cierre de proceso por PID
+```kill -9 PID```
+
+## Gestionar procesos en el fondo
+Cuando ejecutamos un comando o aplicación en la consola, esta se queda bloqueada hasta que el comando finaliza. Si queremos que la ejecución se realice en el fondo, añadimos la tecla ’&’ de esta forma
+
+## Iniciar proceso en background
+```comando &```
+
+Si queremos poner un comando que ya se está ejecutando en background, podemos usar la combinación de teclas.
+
+## Poner procesos en background
+```control + z```
+Si queremos visualizar los procesos que se ejecutan en segundo plano usamos el comando
+
+## Mostrar procesos en background
+```bg```
+Y si queremos traer de vuelta el proceso más reciente puesto en segundo plano usamos,
+
+## Traer al frente proceso
+```fg```
+
+<br>
 
 ## How to use wget to download files and interact with rest APIs
 descagar archivo desde console
