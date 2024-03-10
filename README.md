@@ -20,6 +20,7 @@
 - [Table of Contents](#table-of-contents)
 - [Update \& upgrade](#update--upgrade)
 - [Syststem Information Commands](#syststem-information-commands)
+  - [Busqueda](#busqueda)
 - [echo](#echo)
 - [On terminal](#on-terminal)
   - [Busqueda con filtro](#busqueda-con-filtro)
@@ -153,8 +154,12 @@ code (filename.ext)
 > 
 > :memo: **Note:** ```-y``` al final de un comando le dara YES a todas las preguntas impliucadas al comando
 
-<br>
+## Busqueda
 
+Busca determinada palabra en un archivo:
+```
+cat <path archivo> | grep <Palabra_buscar>
+```
 
 <br>
 
